@@ -1,4 +1,9 @@
 @charset "UTF-8";
+
+* {
+   margin: 0px;
+   padding: 0px;
+}
  header {
     color: white;
     height: 269px;
@@ -12,8 +17,9 @@
     font-variant: small-caps;
     color: white;
  }
- header > p {
-    text-align: center;
+ header > a {
+   margin: auto;
     color: white;
+   
  }
 
