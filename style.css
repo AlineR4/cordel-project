@@ -3,12 +3,19 @@
 * {
    margin: 0px;
    padding: 0px;
+   font-size: 1em;
+}
+
+html, body {
+      min-height: 100vh;
+      background-color: darkgray;
 }
  header {
-    color: white;
-    height: 269px;
-    max-width: 1349px;
     background-color: black;
+    color: white;
+    text-align: center;
+    height: 269px;
+    
  }
  header > h1 {
     padding-top: 50px;
@@ -17,9 +24,61 @@
     font-variant: small-caps;
     color: white;
  }
- header > a {
+ header > p {
    margin: auto;
-    color: white;
-   
+   text-align: center;
+   padding-bottom: 50px;
  }
+ 
+ header a, footer a {
+   color: white;
+   text-decoration: none;
+   font-weight: bolder;
+ }
+ a:hover, footer a:hover {
+  text-decoration: underline; 
+ } 
+ p {
+   display: block;
+   margin-block-start: 1em;
+   margin-block-end: 1em;
+   margin-inline-start: 0px;
+   margin-inline-end: 0px;
+ }
+ section {
+   padding-top: 10vh;
+   padding-bottom: 10vh;
+   line-height: 2em;
+   padding-left: 30px;
+   font-size: 3.5vh;
+ }
+ section.normal {
+   background-color: white;
+   color: black;
+}
 
+section.image {
+   background-color: rgb(51, 51, 51);
+   color: white;
+}
+section.image > p {
+   background-color: rgba(51, 51, 51, 0.25);
+   width: 400px;
+   color: white;
+   box-shadow: inset 6px 6px 13px 0px rgb(0 0 0 / 47%);
+   background-size: cover;
+   background-attachment: fixed;
+   border-radius: 10px;
+}
+section.image#bg1 {
+   background: url(images/background001.jpg) center center no-repeat fixed;
+}
+section.image#bg2 {
+   background: url(images/background002.jpg) center center no-repeat fixed;
+}
+footer {
+   background-color: black;
+   color: white;
+   text-align: center;
+   padding: 10px;
+}
