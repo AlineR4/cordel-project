@@ -64,6 +64,9 @@ html, body {
    font-size: 3.5vh;
    font-family: var(--font3);
  }
+ section >p {
+   padding-bottom: 2em;
+ }
  section.normal {
    background-color: white;
    color: black;
@@ -72,6 +75,7 @@ html, body {
 section.image {
    background-color: rgb(51, 51, 51);
    color: white;
+   box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.514);
   
 }
 section.image > p {
@@ -82,7 +86,7 @@ section.image > p {
    box-shadow: inset 6px 6px 13px 0px rgb(0 0 0 / 47%);
    background-size: cover;
    background-attachment: fixed;
-   border-radius: 10px;
+   text-shadow: 1px 1px 0px black;
 }
 section.image#bg1 {
    background: url(images/background001.jpg) center center no-repeat fixed;
